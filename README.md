@@ -14,12 +14,12 @@ CSS
 JS
 
 # Description
-This is a password generator application. Designed for producing randoma nd complex passwords. Allows user to select password length between 8-128 charcters. Allows user to then select the following charcter types;
+This is a password generator application. Designed for producing random and complex passwords. Allows user to select password length between 8-128 charcters. Allows user to then select the following charcter types;
 Lowercase: abcdefghijklmnopqrstuvwxyz
 Uppercase: ABCDEFGHIJKLMNOPQRSTUVWXYZ
 Numeric Values: 1234567890
 Special Characters: !@#$%^&*()
-The password is guaratneed to have at least one charcter from what the user selects and then selects at random from a pool of up to 936 charcters till it reaches the required password length. The application then shuffles those selected charcters with the guarteed selection to provide a secure password.
+The password is guaratneed to have at least one charcter from what the user selects and then selects at random from a pool of up to 936 charcters till it reaches the requested password length. The application then shuffles those selected charcters with the guarteed selection to provide a secure password.
 
 # Setup Requirements
 
@@ -37,4 +37,4 @@ Application is running well. No known or reported bugs or issues at this time.
 # Preview of Appliaction Loaded Properly
 
 
-![alt text](./assets/images/)
+![alt text](./assets/images/password-generator.png)
