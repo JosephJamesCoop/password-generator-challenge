@@ -76,21 +76,21 @@ function writePassword() {
     var special = ""
     var specialValue = "It will NOT include Special Charcters. "
   };
-    // combines all charcters in charter selected option
-    var choice = lower + upper + numeric + special;
-    if (choice.length > 1) {
-      var confirmSelection =window.confirm("Your password will be " + minimumLength + " charcters long. " + lowerValue + upperValue + numericValue + specialValue + "Does this look correct?");
-  if (confirmSelection) {
-    window.alert("Thank you for your confirmation. Here is your password!")
-  }
-  else {
-    writePassword();
-  };
+  // combines all charcters in charter selected option
+  var choice = lower + upper + numeric + special;
+  if (choice.length > 1) {
+    var confirmSelection = window.confirm("Your password will be " + minimumLength + " charcters long. " + lowerValue + upperValue + numericValue + specialValue + "Does this look correct?");
+    if (confirmSelection) {
+      window.alert("Thank you for your confirmation. Here is your password!")
     }
     else {
-      window.alert("Please select at least one option")
       writePassword();
     };
+  }
+  else {
+    window.alert("Please select at least one option.")
+    writePassword();
+  };
   //generates results
   function generatePassword() {
     //collects one character from each item slected to guarantee one of each
