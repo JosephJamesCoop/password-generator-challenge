@@ -99,7 +99,6 @@ function writePassword() {
     //selects number of charcters slected then adds all additional till number chosen is reached.
     var length = value - 1 - quantity.length
     // guartees you can have 128 charcters in your passcode. Also allows for individual charcters to be used multiple times.
-    var choice = lower + upper + numeric + special;
     var longChoice = choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice;
     //shuffles all selectsions 3 times
     var mixOne = longChoice.split("").sort(
