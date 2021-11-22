@@ -56,28 +56,28 @@ function generatePassword(){
   var lower = sessionStorage.getItem("2");
   var numeric = sessionStorage.getItem("3");
   var special = sessionStorage.getItem("4");
-  var minimum = sessionStorage.getItem("min");
-  var maximum = sessionStorage.getItem("max");
+  var value = sessionStorage.getItem("min");
   var choice = upper + lower + numeric + special;
+  var length = value - 1
+var longChoice = choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice + choice;
 
-  var value = Math.floor(Math.random() * (maximum - minimum) + minimum + 1);
+var mixOne = longChoice.split("").sort(
+  function(){return 0.5-Math.random()
+  }).join("");
 
-const str = choice;
+var mixTwo = mixOne.split("").sort(
+  function(){return 0.5-Math.random()
+  }).join("");
 
-function sumAll() {
-        let sum = 0;
-        for (let i = 0; i < value; i++) {
-        firstString += str.substr(1, 2)[i];
+var mixThree = mixTwo.split("").sort(
+  function(){return 0.5-Math.random()
+  }).join("");
+
+let seventh = mixThree[6];
+  for (let i = 0; i < length; i++) {
+  var answer = seventh += mixThree.substr()[i];
       }
-
-
-console.log(str.substr(1, 2));
-
-  
-
-
-
-  return "40"
+  return answer
 };
 
 
