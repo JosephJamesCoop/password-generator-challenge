@@ -9,8 +9,8 @@ function writePassword() {
     var value = Math.floor(minimumLength);
   }
   else {
-    window.alert("Please type a numeric value that corresponds with the number of characters you would like. For example: Enter '34' to select 34 characters");
-    writePassword();
+    window.alert("Ooops! It looks like you entered an invalid value. Please click Generate Password again to start over. To select 34 charcters please enter '34'.");
+    return
   }
   // do you want lowercase?
   var lowercase = window.confirm("Would you like to include LOWERCASE letters?");
@@ -82,14 +82,18 @@ function writePassword() {
     var confirmSelection = window.confirm("Your password will be " + minimumLength + " charcters long. " + lowerValue + upperValue + numericValue + specialValue + "Does this look correct?");
     if (confirmSelection) {
       window.alert("Thank you for your confirmation. Here is your password!")
+      var password = generatePassword();
     }
     else {
-      writePassword();
+      window.alert("To reselect your character types please click the Generate Password button again. Thank you.")
+      return
+     
     };
   }
   else {
-    window.alert("Please select at least one option.")
-    writePassword();
+    window.alert("Oops! It looks like you did not select any character types. Please click the Generate Password button again and select at least one Character Type.")
+      return
+    
   };
   //generates results
   function generatePassword() {
@@ -129,7 +133,7 @@ function writePassword() {
     // returns the password with the specified qualifications
     return answer
   };
-  var password = generatePassword();
+  
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
