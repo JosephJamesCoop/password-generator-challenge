@@ -54,6 +54,13 @@ function writePassword() {
       sessionStorage.setItem("max", "128")
       break;
   }
+  var lowercase = window.confirm("Would you like to include LOWERCASE letters?");
+  if (lowercase) {
+    sessionStorage.setItem("1", "abcdefghijklmnopqrstuvwxyz")
+  }
+  else {
+    sessionStorage.setItem("1", "")
+  }
 
 
 
