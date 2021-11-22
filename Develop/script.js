@@ -68,6 +68,13 @@ function writePassword() {
     else {
       sessionStorage.setItem("2", "");
     }
+    var numericValues = window.confirm("Would you like to include Numeric Values?");
+    if (numericValues) {
+      sessionStorage.setItem("3", "0123456789");
+    }
+    else {
+      sessionStorage.setItem("3", "")
+    }
 
 
 
