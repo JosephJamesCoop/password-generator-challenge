@@ -75,7 +75,13 @@ function writePassword() {
     else {
       sessionStorage.setItem("3", "")
     }
-
+    var specialCharacters = window.confirm("Would you like to include Special Characters?");
+    if (specialCharacters) {
+      sessionStorage.setItem("4", "!@#$%^&*()");
+    }
+    else {
+      sessionStorage.setItem("4", "");  
+    }
 
 
 
