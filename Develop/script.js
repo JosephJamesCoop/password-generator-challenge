@@ -61,7 +61,13 @@ function writePassword() {
   else {
     sessionStorage.setItem("1", "")
   }
-
+    var uppercase = window.confirm("Would you like to include UPPERCASE letters?");
+    if (uppercase) {
+      sessionStorage.setItem("2", "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    }
+    else {
+      sessionStorage.setItem("2", "");
+    }
 
 
 
